@@ -19,7 +19,7 @@ class CustomersController
   end
 
   def list 
-    # Grab all the meals from the meal repository
+    # Grab all the customers from the customer repository
     customers = @customer_repository.all
     # Give them to the view to display them
     @view.display(customers)
