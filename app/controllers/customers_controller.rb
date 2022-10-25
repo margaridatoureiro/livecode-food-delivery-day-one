@@ -12,9 +12,9 @@ class CustomersController
     name = @view.ask_user_for(:name)
     # Ask the user for an address
     address = @view.ask_user_for(:address)
-    # Create an instance of Meal
+    # Create an instance of Customer
     customer = Customer.new(name: name, address: address)
-    # Give the meal to the meal repository
+    # Give the customer to the cutomer repository
     @customer_repository.create(customer)
   end
 
